@@ -73,7 +73,7 @@ export default {
 .block {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
 }
 
 .text {
@@ -88,10 +88,10 @@ export default {
 
 .digit {
     color: #ecf0f1;
-    font-size: 150px;
+    font-size: 120px;
     font-weight: 100;
     font-family: 'Roboto', serif;
-    margin: 10px;
+    margin: 8px;
     text-align: center;
 }
 </style>
