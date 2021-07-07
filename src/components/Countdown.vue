@@ -1,23 +1,31 @@
 <template>
- <div class="outside-block">
-    <div class="block">
-        <p class="digit">{{ days | two_digits }}</p>
-        <p class="text">Dias</p>
-    </div>
-    <div class="block">
-        <p class="digit">{{ hours | two_digits }}</p>
-        <p class="text">Horas</p>
-    </div>
-    <div class="block">
-        <p class="digit">{{ minutes | two_digits }}</p>
-        <p class="text">Minutos</p>
-    </div>
-    <div class="block">
-        <p class="digit">{{ seconds | two_digits }}</p>
-        <p class="text">Segundos</p>
-    </div>
-    
- </div>
+
+    <v-card
+        elevation="5"
+        color="#af1df2"
+        shaped 
+    >
+        <div class="outside-block">
+            
+            <div class="block">
+                <p class="digit">{{ days | two_digits }}</p>
+                <p class="text">Dias</p>
+            </div>
+            <div class="block">
+                <p class="digit">{{ hours | two_digits }}</p>
+                <p class="text">Horas</p>
+            </div>
+            <div class="block">
+                <p class="digit">{{ minutes | two_digits }}</p>
+                <p class="text">Minutos</p>
+            </div>
+            <div class="block">
+                <p class="digit">{{ seconds | two_digits }}</p>
+                <p class="text">Segundos</p>
+            </div>
+            
+        </div>
+    </v-card>
 </template>
 <script>
 export default {
@@ -30,7 +38,6 @@ export default {
 
     props : {
         date : {
-            type: Number,
             coerce: str => Math.trunc(Date.parse(str) / 1000)
         }
     },
@@ -62,12 +69,13 @@ export default {
 }
 
 </script>
-<style>
+<style scoped>
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:100);
 
 .outside-block {
     display: flex;
     flex-wrap: wrap;
+    cursor: context-menu;
 }
 
 .block {
@@ -93,5 +101,9 @@ export default {
     font-family: 'Roboto', serif;
     margin: 8px;
     text-align: center;
+}
+
+.v-card {
+    width: fit-content;
 }
 </style>
