@@ -66,7 +66,8 @@ export default {
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:100);
 
 .outside-block {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .block {

@@ -25,4 +25,8 @@ export default {
     right: 0;
     top:0;
 }
+
+body {
+    background-color: #af1df2;
+}
 </style>
