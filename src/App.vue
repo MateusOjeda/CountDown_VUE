@@ -27,6 +27,7 @@ export default {
 
 body {
     background-color: #be4ef2;
+    min-width: 1000px;
 }
 
 .global-card {
@@ -39,6 +40,8 @@ body {
 .galery-test {
     position: absolute;
     z-index: -1;
-    width: 80%;
+    width: 650px;
+    left: 0;
+    margin-top: 120px;
 }
 </style>
