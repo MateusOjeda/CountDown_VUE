@@ -2,7 +2,7 @@
   <div id="app">
       <!-- Math.trunc((new Date(2021, 7, 5, 0, 0)).getTime() / 1000) -->
       <div class="global-card">
-        <Countdown date=1625875200></Countdown>
+        <Countdown date=1625871600></Countdown>
       </div>
       <div class="galery-test">
           <Galery></Galery>
