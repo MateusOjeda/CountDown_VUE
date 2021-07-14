@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-      <!-- Math.trunc((new Date(2021, 7, 5, 0, 0)).getTime() / 1000) -->
+      <!-- Math.trunc((new Date(2021, 8, 1, 0, 0)).getTime() / 1000) -->
       <div class="global-card">
-        <Countdown date=1630528500></Countdown>
+        <Countdown date=1627806900></Countdown>
       </div>
       <div class="galery-test">
           <Galery></Galery>
