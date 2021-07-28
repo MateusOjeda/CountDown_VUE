@@ -23,7 +23,6 @@
                 <p class="digit">{{ seconds | two_digits }}</p>
                 <p class="text">Segundos</p>
             </div>
-            
         </div>
     </v-card>
 </template>
@@ -33,7 +32,6 @@ export default {
         window.setInterval(() => {
             this.now = Math.trunc((new Date()).getTime() / 1000);
         },1);
-
     },
 
     props : {
